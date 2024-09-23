@@ -1,3 +1,16 @@
 fn main() {
-    println!("owner sine!");
+    let s1 = String::from("hello");
+
+    let len = calculate_length(&s1);
+
+    // '{}'の長さは、{}です
+    println!("The length of '{}' is {}.", s1, len);
+}
+
+fn calculate_length(s: &String) -> usize {
+    s.len()
+}
+
+fn owner_function(s:String){
+    
 }
